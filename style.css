@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+    background-color: #20242E;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info {
+    display: none;
+    height: 0%;
+    max-height: 60%;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: height .2 ease-in-out;
+    padding-top: 6rem;
+    text-align: center;
+}
+
+.info .card {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #070b132f;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 6.5px rgba(0, 0, 0, 0.300);
+    color: white;
+    font-size: 4rem;
+    padding: 2rem 3.5rem;
+}
+
+
+.searchCity {
+    height: 100%;
+    max-height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cityText {
+    width: 25%;
+    outline: none;
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px white solid;
+    font-size: 1.5em;
+    text-align: center;
+}   
+
+.submitBtn {
+    width: 25%;
+    font-size: 1.5em;
+    background-color: #95ef77;
+    color: #222831;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: .7rem 1.5rem;
+    transition: transform .2s ease-in-out;
+    margin: 5px;
+    text-align: c;
+}
+
+.submitBtn:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
